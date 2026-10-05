@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Tostadero Aroma | Inicio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Young+Serif&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="cabecera">
+    <a class="logo" href="index.html">Tostadero Aroma</a>
+    <button class="btn-menu" id="btnMenu" aria-label="Abrir menú" aria-expanded="false">☰</button>
+    <nav class="nav" id="nav" aria-label="Principal">
+      <a href="index.html" class="activo">Inicio</a>
+      <a href="paginas/menu.html" >Menú</a>
+      <a href="paginas/nosotros.html" >Nosotros</a>
+      <a href="paginas/contacto.html" >Contacto</a>
+    </nav>
+  </header>
+  <main>
+    <section class="hero">
+      <div class="hero-texto">
+        <h1>Café de origen, tostado cada mañana.</h1>
+        <p>Granos seleccionados, postres hechos en casa y un rincón tranquilo para estudiar o conversar.</p>
+        <div class="hero-botones">
+          <a class="btn" href="paginas/menu.html">Ver el menú</a>
+          <a class="btn btn-borde" href="paginas/contacto.html">Reservar mesa</a>
+        </div>
+      </div>
+      <div class="hero-taza" aria-hidden="true">☕</div>
+    </section>
+
+    <section class="seccion">
+      <h2>Lo que nos distingue</h2>
+      <div class="rejilla">
+        <article class="tarjeta"><h3>Tostado propio</h3><p>Tostamos en pequeños lotes para que cada taza llegue fresca.</p></article>
+        <article class="tarjeta"><h3>Repostería diaria</h3><p>Brownies, tortas y galletas horneadas en el día.</p></article>
+        <article class="tarjeta"><h3>Espacio para quedarse</h3><p>Wifi gratis, enchufes en cada mesa y música suave.</p></article>
+      </div>
+    </section>
+
+    <section class="seccion seccion-oscura">
+      <h2>Horario</h2>
+      <p>Lunes a viernes de 7:00 a 21:00 · Sábados y domingos de 8:00 a 22:00.</p>
+      <a class="btn btn-claro" href="paginas/nosotros.html">Conoce nuestra historia</a>
+    </section>
+  </main>
+  <footer class="pie"><p>© <span id="anio">2026</span> Tostadero Aroma · Grupo 6</p></footer>
+  <script src="js/script.js"></script>
+</body>
+</html>
