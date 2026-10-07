@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Menú | Tostadero Aroma</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Young+Serif&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+  <header class="cabecera">
+    <a class="logo" href="../index.html">Tostadero Aroma</a>
+    <button class="btn-menu" id="btnMenu" aria-label="Abrir menú" aria-expanded="false">☰</button>
+    <nav class="nav" id="nav" aria-label="Principal">
+      <a href="../index.html" >Inicio</a>
+      <a href="menu.html" class="activo">Menú</a>
+      <a href="nosotros.html" >Nosotros</a>
+      <a href="contacto.html" >Contacto</a>
+    </nav>
+  </header>
+  <main>
+    <section class="seccion">
+      <h1>Nuestro menú</h1>
+      <p class="intro">Filtra por categoría o busca tu favorito.</p>
+      <div class="controles">
+        <div class="filtros" role="group" aria-label="Categorías">
+          <button class="filtro activo" data-filtro="todos">Todos</button>
+          <button class="filtro" data-filtro="cafes">Cafés</button>
+          <button class="filtro" data-filtro="frios">Bebidas frías</button>
+          <button class="filtro" data-filtro="postres">Postres</button>
+        </div>
+        <input type="search" id="buscador" placeholder="Buscar producto..." aria-label="Buscar producto">
+      </div>
+      <div class="rejilla" id="productos">
+        <article class="producto" data-categoria="cafes"><span class="emoji">☕</span><h3>Espresso</h3><p>Intenso, con crema espesa.</p><strong>Bs 12</strong></article>
+        <article class="producto" data-categoria="cafes"><span class="emoji">🥛</span><h3>Capuchino</h3><p>Espresso con leche vaporizada.</p><strong>Bs 18</strong></article>
+        <article class="producto" data-categoria="cafes"><span class="emoji">🍫</span><h3>Moka</h3><p>Café, chocolate y espuma de leche.</p><strong>Bs 22</strong></article>
+        <article class="producto" data-categoria="frios"><span class="emoji">🧊</span><h3>Cold brew</h3><p>Infusionado en frío durante 16 horas.</p><strong>Bs 20</strong></article>
+        <article class="producto" data-categoria="frios"><span class="emoji">🍋</span><h3>Limonada de menta</h3><p>Limón natural y hojas de menta.</p><strong>Bs 14</strong></article>
+        <article class="producto" data-categoria="frios"><span class="emoji">🥤</span><h3>Frappé de caramelo</h3><p>Café frío licuado con caramelo.</p><strong>Bs 25</strong></article>
+        <article class="producto" data-categoria="postres"><span class="emoji">🍰</span><h3>Brownie</h3><p>Chocolate amargo y nueces.</p><strong>Bs 15</strong></article>
+        <article class="producto" data-categoria="postres"><span class="emoji">🥐</span><h3>Croissant de almendras</h3><p>Hojaldre relleno, horneado al momento.</p><strong>Bs 16</strong></article>
+        <article class="producto" data-categoria="postres"><span class="emoji">🍪</span><h3>Galletas de avena</h3><p>Tres piezas, pasas y canela.</p><strong>Bs 10</strong></article>
+      </div>
+      <p id="sinResultados" class="vacio" hidden>No encontramos productos con esa búsqueda. Prueba con otra palabra o elige "Todos".</p>
+    </section>
+  </main>
+  <footer class="pie"><p>© <span id="anio">2026</span> Tostadero Aroma · Grupo 6</p></footer>
+  <script src="../js/script.js"></script>
+</body>
+</html>

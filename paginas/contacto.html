@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contacto | Tostadero Aroma</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Young+Serif&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+  <header class="cabecera">
+    <a class="logo" href="../index.html">Tostadero Aroma</a>
+    <button class="btn-menu" id="btnMenu" aria-label="Abrir menú" aria-expanded="false">☰</button>
+    <nav class="nav" id="nav" aria-label="Principal">
+      <a href="../index.html" >Inicio</a>
+      <a href="menu.html" >Menú</a>
+      <a href="nosotros.html" >Nosotros</a>
+      <a href="contacto.html" class="activo">Contacto</a>
+    </nav>
+  </header>
+  <main>
+    <section class="seccion seccion-estrecha">
+      <h1>Reserva tu mesa</h1>
+      <p class="intro">Déjanos tus datos y te confirmamos por correo.</p>
+      <form id="formulario" novalidate>
+        <div class="campo">
+          <label for="nombre">Nombre completo</label>
+          <input type="text" id="nombre" name="nombre" autocomplete="name">
+          <span class="error" id="error-nombre"></span>
+        </div>
+        <div class="campo">
+          <label for="correo">Correo electrónico</label>
+          <input type="email" id="correo" name="correo" autocomplete="email">
+          <span class="error" id="error-correo"></span>
+        </div>
+        <div class="campo">
+          <label for="personas">Número de personas</label>
+          <select id="personas" name="personas">
+            <option value="">Selecciona...</option>
+            <option>1</option><option>2</option><option>3</option><option>4</option><option>5 o más</option>
+          </select>
+          <span class="error" id="error-personas"></span>
+        </div>
+        <div class="campo">
+          <label for="mensaje">Mensaje (opcional)</label>
+          <textarea id="mensaje" name="mensaje" rows="4" maxlength="200"></textarea>
+          <small><span id="contador">0</span>/200</small>
+        </div>
+        <button class="btn" type="submit">Enviar reserva</button>
+        <p class="exito" id="exito" role="status" hidden></p>
+      </form>
+    </section>
+  </main>
+  <footer class="pie"><p>© <span id="anio">2026</span> Tostadero Aroma · Grupo 6</p></footer>
+  <script src="../js/script.js"></script>
+</body>
+</html>
